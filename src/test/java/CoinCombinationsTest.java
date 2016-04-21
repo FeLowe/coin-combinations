@@ -19,11 +19,13 @@ public class CoinCombinationsTest extends FluentTest{
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  // @Test
-  // public void rootTest() {
-  //   goTo("http://localhost:4567/");
-  //   assertThat(pageSource()).contains("Type in a phrase here.");
-  // }
+  @Test
+  public void CoinCombination() {
+    goTo("http://localhost:4567/");
+    fill("#cents").with("36");
+    submit(".btn");
+    assertThat(pageSource()).contains(" 1 Quarter 1 Dime 1 Penny");
+  }
 
   @Test
   public void coinCombination_makesChangeFor25cents_1Quarter() {
