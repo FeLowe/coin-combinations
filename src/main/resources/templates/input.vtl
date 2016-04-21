@@ -1,14 +1,8 @@
-<form class="" action="/output" method="get">
+<form action="/output" method="get">
   <div class="form-group">
-    <label for="phrase">Type in a phrase here.</label>
-    <input id="phrase" type="text" name="phrase" value="">
-
-    <label for="find">Type in the word you want to be found.</label>
-    <input id="find" type="text" name="find" value="">
-
-    <label for="replaceWith">Type in the word you want to be inserted in place of the word you found.</label>
-    <input id="replaceWith" type="text" name="replaceWith" value="">
+    <label for="cents">Type the number of cents you want to make change for:</label>
+    <input id="cents" type="text" name="cents" class="form-control">
   </div>
 
-  <button type="submit" name="button">Replace!</button>
+  <button type="submit" name="button" class="btn btn-info">Get change</button>
 </form>

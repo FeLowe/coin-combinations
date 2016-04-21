@@ -10,27 +10,28 @@ import static spark.Spark.*;
 
 public class App {
   public static void main(String[] args) {
-    // String layout = "templates/layout.vtl";
-    // get("/", (request, response) -> {
-    //   Map<String, Object> model = new HashMap<String, Object>();
-    //   model.put("template", "templates/input.vtl");
-    //   return new ModelAndView(model, layout);
-    // }, new VelocityTemplateEngine());
-    //
-    // get("/output", (request, response) -> {
-    //   Map<String, Object> model = new HashMap<String, Object>();
-    //   model.put("template", "templates/output.vtl");
-    //
-    //   Replace myReplace = new Replace();
-    //
-    //   String inputtedPhrase = request.queryParams("phrase");
-    //   String inputtedFind = request.queryParams("find");
-    //   String inputtedReplaceWith = request.queryParams("replaceWith");
-    //
-    //   String replacementResult = myReplace.findAndReplace(inputtedPhrase, inputtedFind, inputtedReplaceWith);
-    //   model.put("result", replacementResult);
-    //   return new ModelAndView(model, layout);
-    // }, new VelocityTemplateEngine());
+    String layout = "templates/layout.vtl";
+    get("/", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/input.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("/output", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/output.vtl");
+
+      CoinCombinations myCoinCombinations = new CoinCombinations();
+
+      String inputtedAmountString = request.queryParams("cents");
+      Integer inputtedAmount = Integer.parseInt(inputtedAmountString);
+
+
+      String result = myCoinCombinations.change(inputtedAmount);
+
+      model.put("result", result);
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 
 

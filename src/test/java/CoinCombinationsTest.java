@@ -28,46 +28,46 @@ public class CoinCombinationsTest extends FluentTest{
   @Test
   public void coinCombination_makesChangeFor25cents_1Quarter() {
     CoinCombinations testCoinCombinations = new CoinCombinations();
-    String expected = "1 Quarter";
+    String expected = " 1 Quarter";
     assertEquals(expected, testCoinCombinations.change(25));
   }
 
   @Test
   public void coinCombination_makesChangeFor75cents_3Quarters() {
     CoinCombinations testCoinCombinations = new CoinCombinations();
-    String expected = "3 Quarters";
+    String expected = " 3 Quarters";
     assertEquals(expected, testCoinCombinations.change(75));
   }
 
   @Test
   public void coinCombination_makesChangeFor20cents_2Dimes() {
     CoinCombinations testCoinCombinations = new CoinCombinations();
-    String expected = "2 Dimes";
+    String expected = " 2 Dimes";
     assertEquals(expected, testCoinCombinations.change(20));
   }
   @Test
   public void coinCombination_makesChangeFor35cents_1Quarter1Dime() {
     CoinCombinations testCoinCombinations = new CoinCombinations();
-    String expected = "1 Quarter1 Dime";
+    String expected = " 1 Quarter 1 Dime";
     assertEquals(expected, testCoinCombinations.change(35));
   }
   @Test
   public void coinCombination_makesChangeFor5cents_1Nickel() {
     CoinCombinations testCoinCombinations = new CoinCombinations();
-    String expected = "1 Nickel";
+    String expected = " 1 Nickel";
     assertEquals(expected, testCoinCombinations.change(5));
   }
 
   @Test
   public void coinCombination_makesChangeFor1cent_1Penny() {
     CoinCombinations testCoinCombinations = new CoinCombinations();
-    String expected = "1 Penny";
+    String expected = " 1 Penny";
     assertEquals(expected, testCoinCombinations.change(1));
   }
   @Test
   public void coinCombination_makesChangeFor44cents_1Quarter1Dime1Nickel4Pennies() {
     CoinCombinations testCoinCombinations = new CoinCombinations();
-    String expected = "1 Quarter1 Dime1 Nickel4 Pennies";
+    String expected = " 1 Quarter 1 Dime 1 Nickel 4 Pennies";
     assertEquals(expected, testCoinCombinations.change(44));
   }
   @Test
