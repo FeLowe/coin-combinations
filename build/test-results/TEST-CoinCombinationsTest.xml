@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoinCombinationsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-04-21T16:40:27" hostname="epicodus-55.local" time="0.037">
+  <properties/>
+  <testcase name="coinCombination_makesChangeFor75cents_3Quarters" classname="CoinCombinationsTest" time="0.002"/>
+  <testcase name="coinCombination_makesChangeFor35cents_1Quarter1Dime" classname="CoinCombinationsTest" time="0.0"/>
+  <testcase name="coinCombination_makesChangeFor25cents_1Quarter" classname="CoinCombinationsTest" time="0.0"/>
+  <testcase name="coinCombination_makesChangeFor1cent_1Penny" classname="CoinCombinationsTest" time="0.001"/>
+  <testcase name="coinCombination_makesChangeFor20cents_2Dimes" classname="CoinCombinationsTest" time="0.001"/>
+  <testcase name="coinCombination_makesChangeFor0cent_NoChange" classname="CoinCombinationsTest" time="0.0"/>
+  <testcase name="coinCombination_makesChangeFor44cents_1Quarter1Dime1Nickel4Pennies" classname="CoinCombinationsTest" time="0.001"/>
+  <testcase name="coinCombination_makesChangeFor5cents_1Nickel" classname="CoinCombinationsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Thread-4] INFO org.eclipse.jetty.util.log - Logging initialized @533ms
+[Thread-4] INFO spark.webserver.JettySparkServer - == Spark has ignited ...
+[Thread-4] INFO spark.webserver.JettySparkServer - >> Listening on 0.0.0.0:4567
+[Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.3.2.v20150730
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@24855a27{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.Server - Started @608ms
+[Test worker] INFO spark.webserver.JettySparkServer - >>> Spark shutting down ...
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@24855a27{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.JettySparkServer - done
+]]></system-err>
+</testsuite>
